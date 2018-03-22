@@ -1,0 +1,200 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Bree+Serif);
+
+body {
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  padding-top: 66px;;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bree Serif', serif;
+}
+
+p {
+  line-height: 20px;
+
+}
+
+/* Navigation Bar  *************************/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(250, 250, 250, 0.8);
+    border-bottom: 2px solid #ccc;
+    height: 66px;
+/* !?!?should we generaly put a height on a nav bar  */
+    width: 100%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li a {
+  padding: 25px 10px;
+  display: block;
+  text-decoration: none;
+  color:  #0059b3;
+}
+
+
+nav li a:hover{
+  cursor:pointer;
+  background-color: #cce6ff;
+  box-shadow: 0 2px 15px 0px #0059b3;
+}
+/* ??Do we need the nav li for clarity? */
+
+#brand {
+	  text-indent: -9000px;
+   /* so there is a text but does not shoe */
+    background: url(../images/z.png);
+    background-size: 45px;
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*Hero Section  *********************************/
+/* Set The position */
+#hero {
+  /* background: url(../images/jon-flobrant-65429-unsplash.jpg); */
+  text-align: center;
+  color: #fafafa;
+  background-size: cover;
+  height: 350px;
+  padding: 25px 0;
+}
+
+/***To Set the GRADIENT on the Background IMAGE Overlay****/
+  #hero {
+  /* background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://unsplash.it/2000/1500?image=1067); */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/jon-flobrant-65429-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+#hero img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 30px;
+  border: 2px solid white;
+}
+
+#hero h2 {
+  font-size: 400%;
+  margin: 10px;
+}
+
+#hero span {
+  border: 2px solid white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 150%;
+}
+
+#hero span:hover{
+  cursor:pointer;
+  background-color: #cce6ff;
+  color: black;
+}
+
+/* Column Section  ***********************************/
+
+#main-content {
+  text-align: center;
+  padding: 25px 0;
+  overflow: hidden;
+}
+
+#main-content h3{
+  font-size: 250%;
+  margin: 20px 0;
+}
+
+
+
+.column {
+  padding:15px;
+}
+
+.column img {
+  width:70%;
+   max-width: 70%;
+  border-radius: 50%;
+  border: 5px solid #3399ff;
+  margin-bottom: 20px;
+}
+ /* The square picture */
+#home img {
+border-radius: 2%;
+}
+
+.column h4 {
+  color: #3399ff;
+  font-size: 150%;
+  margin-bottom: 15px;
+
+}
+
+
+.column .btn {
+    border: 2px solid #3399ff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 150%;
+    text-decoration: none;
+    color: #3399ff;
+    font-family: 'Amatic SC', cursive;
+    box-shadow: 0 2px 15px 0px #0059b3;
+}
+.column .btn:hover{
+  cursor:pointer;
+  background-color: #cce6ff;
+  box-shadow: 0 2px 15px 0px #0059b3;
+}
+
+/* Social Media SEction **********************************/
+#social {
+  background: #0059b3;
+  color: #fafafa;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+#social ul li img {
+  margin: 10px;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+}
+/* Footer  **********************************************/
+footer {
+  width:  100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* .footer-list {
+  display: flex;
+  justify-content: center;
+} */
